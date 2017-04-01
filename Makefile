@@ -28,5 +28,5 @@ upload-all:
 	printf 'Uploading %s\n' "$$FILE"
 
 clean:
-	rm *.pdf
+	rm -f *.pdf
 	$(MAKE) -C book clean

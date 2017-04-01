@@ -2,7 +2,9 @@
 SUNDAY ?= $(shell date -v +Sun "+%Y-%m-%d")
 
 # The default targets
-all: sermon-a5.pdf upload-all
+all: sermon-a5.pdf
+
+done: upload-all
 
 sermon-a5.pdf:
 	$(MAKE) -C book lshort-a5.pdf
